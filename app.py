@@ -8,10 +8,10 @@ app.secret_key = 'temporary_key'
 # Database connection
 def get_db_connection():
     return mysql.connector.connect(
-        host='clonedb.ct4kk08gsd28.us-east-1.rds.amazonaws.com',
+        host='clonedb.clceq4cce6va.us-east-1.rds.amazonaws.com',
         user='admin',
-        password='daraniprasad',
-        database='clone_db'
+        password='Lithika_2004',
+        database=''
     )     
 
 # Registration Route
@@ -55,8 +55,8 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     course_urls = [
-        'https://clonebucker2004.s3.us-east-1.amazonaws.com/python_code.pdf',
-        'https://clonebucker2004.s3.us-east-1.amazonaws.com/PYTHON%2BPROGRAMMING%2BNOTES.pdf'
+        'https://clonebucketl1.s3.us-east-1.amazonaws.com/Unit-1.pdf',
+        'https://clonebucketl1.s3.us-east-1.amazonaws.com/Unit-2.pdf'
     ]
     
     return render_template('dashboard.html', course_urls=course_urls)
